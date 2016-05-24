@@ -1,0 +1,139 @@
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+@-webkit-keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+@-moz-keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+@-o-keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    margin-right: -500px;
+  }
+  100% {
+    margin-right: 15px;
+  }
+}
+
+@-moz-keyframes slideIn {
+  0% {
+    margin-right: -500px;
+  }
+  100% {
+    margin-right: 15px;
+  }
+}
+
+@-o-keyframes slideIn {
+  0% {
+    margin-right: -500px;
+  }
+  100% {
+    margin-right: 15px;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    margin-right: -500px;
+  }
+  100% {
+    margin-right: 15px;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    border-radius: 100%;
+  }
+  50% {
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1000);
+    border-radius: 100%;
+  }
+}
+
+@-webkit-keyframes stretch {
+  0% {
+    transform: scale(.3);
+    border-radius: 100%;
+  }
+  50% {
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1000);
+    border-radius: 100%;
+  }
+}
+
+@-moz-keyframes stretch {
+  0% {
+    transform: scale(.3);
+    border-radius: 100%;
+  }
+  50% {
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1000);
+    border-radius: 100%;
+  }
+}
+
+@-o-keyframes stretch {
+  0% {
+    transform: scale(.3);
+    border-radius: 100%;
+  }
+  50% {
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1000);
+    border-radius: 100%;
+  }
+}

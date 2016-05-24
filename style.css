@@ -1,0 +1,253 @@
+body {
+  background-color: silver;
+  color: grey;
+  font-family: 'Muli', sans-serif;
+  z-index: 0;
+}
+
+button:focus {
+  outline:0;
+}
+
+button {
+  border-radius: 25px;
+  height: 45px;
+  width: 45px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+  background-color: transparent; 
+  z-index: 2;
+}
+
+i {
+  font-size: 2em;
+  color: grey;
+}
+
+.element {
+  position: fixed;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -365px;
+  top: 50%;
+  margin-top: -220px;
+  height: 440px;
+  width: 730px;
+  background-color: white;
+  border-radius:5px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.section {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+}
+
+.top-div {
+  height: 40px;
+  z-index: 0;
+}
+
+.middle-div {
+  height: 300px;
+  z-index: 0;
+}
+
+.bottom-div {
+  height: 100px;
+  z-index: 0;
+}
+
+.top {
+  position: absolute;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.language {
+  left: 50%;
+  margin-left: -32px;
+  margin-top: 16px;
+}
+
+.language-button {
+  width: 26px;
+  height: 26px;
+  border: 1px solid white;
+  color: white;
+  padding: 0;
+}
+
+.back-arrow {
+  left: 25px;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
+}
+
+.close-button {
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  font-size: 1.5em;
+}
+
+.email-header {
+  position: absolute;
+  display: block;
+  right: 15px;
+  bottom: 20px;
+  font-size: 12px;
+  width: 230px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.button-bundle {
+  margin-left: 40px;
+  z-index: 3;
+}
+
+.icon {
+  margin: 0px 0px 18.5px 18.5px;
+  display: inline-block;
+}
+
+.content-div {
+  display: block;
+  float: left;
+  width: 300px;
+  height: 300px;
+  padding-left: 70px;
+  white-space: normal;
+  z-index: 5;
+}
+
+.content-header {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 1000; 
+}
+
+.content {
+  font-size: 12px;
+  padding: 0;
+  padding-bottom: 15px; 
+  margin: 0;
+}
+
+.header {
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.image-div {
+  float: right;
+  width: 330px;
+  height: 400px;
+  overflow: hidden;
+  -webkit-animation: .5s slideIn forwards;
+  -moz-animation: .5s slideIn forwards;
+  -o-animation: .5s slideIn forwards;
+  animation: .5s slideIn forwards;
+  z-index: 5;
+}
+
+.english {
+  margin-right: 5px;
+}
+
+.person-image {
+  margin-left: 30%;
+}
+
+.see-more-button {
+  display: inline;
+  border-radius: 2.5px;
+  border: 2px solid white;
+  color: white;
+  width: 75px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: none;
+  vertical-align: none;
+}
+
+div#slider { 
+  overflow: hidden; 
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 200px;
+  width: 300px;
+  -webkit-animation: .5s slideIn forwards;
+  -moz-animation: .5s slideIn forwards;
+  -o-animation: .5s slideIn forwards;
+  animation: .5s slideIn forwards;
+}
+div#slider figure img { 
+  width: 20%;
+  float: left; 
+}
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  -webkit-animation: 10s slidy infinite;
+  -moz-animation: 10s slidy infinite;
+  -o-animation: 10s slidy infinite;
+  animation: 10s slidy infinite; 
+}
+
+.gif {
+  height: 200px;
+  width: 300px;
+  padding: 0;
+  margin: 0px;
+  margin-top: 50px;
+  margin-right: -5px;
+}
+
+.slide-in {
+  -webkit-animation: .5s slideIn forwards;
+  -moz-animation: .5s slideIn forwards;
+  -o-animation: .5s slideIn forwards;
+  animation: .5s slideIn forwards;
+}
+
+.primed {
+  position: absolute;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  z-index: 2;
+}
+
+.fill {
+  animation-name: stretch;
+  animation-duration: 10s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: forwards;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  z-index: 1;
+}

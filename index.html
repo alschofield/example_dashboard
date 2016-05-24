@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+  <link href="https://file.myfontastic.com/wvFjEyZ7Y4rnihwXhgm7Qn/icons.css" rel="stylesheet">
+  <script type="text/javascript" src="./main.js"></script>
+  <link rel="stylesheet" type="text/css" href="./animations.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <script id="element-template" type="text/x-handlebars-template">
+    <div class="element">
+      <div class="top-div section">
+        {{#unless is_home}}
+          <button class="back-arrow top">
+            <div class="back-arrow-primed primed"></div>
+            <i class="icon-arrow-left"></i>
+          </button>
+        {{/unless}}
+        <div class="language top">
+          <button class="language-button english">
+            En
+          </button>
+          <button class="language-button french">
+            Fr
+          </button>
+        </div>
+        <button class="close-button top">
+          <i class="icon-cancel"></i>
+        </button>
+      </div>
+      <div class="middle-div section">
+        <div class="content-div column">
+          <p class="content-header">
+            <b>
+              {{#if is_home}}
+                Hello
+              {{else}}
+                My
+              {{/if}}
+            </b>
+          </p>
+          <p class="header">
+            {{header}}
+          </p>
+          <p class="content">
+            {{content}}
+            {{#unless is_home}}
+              </br>
+              </br>
+              <button class="see-more-button">See more</button>
+            {{/unless}}
+          </p>
+          {{#if content_2}}
+            <p class="content">
+              {{content_2}}
+            </p>
+          {{/if}}
+        </div>
+        <div class="image-div column">
+          {{#if is_home}}
+            <div class="iframe-div">
+              <img class="person-image" src="http://www.phoenixresearch.be/sites/default/files/person1_0.png">
+            </div>
+          {{else if Dribbble}}
+            <div class="iframe-div">
+              <img class="gif" src="https://49.media.tumblr.com/d2a94ff808c585c63529ea16c62de2ee/tumblr_o4wxsgJFPv1ts4htvo1_500.gif">
+            </div>
+          {{else if Behance}}
+            <div class="iframe-div">
+              <img class="gif" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ad51d711353993.560f654c25cb0.gif">
+            </div>
+          {{else if LinkedIn}}
+
+          {{else if Twitter}}
+
+          {{else if Instagram}}
+            <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+            <div id="slider">
+              <figure>
+                <img src="austin-fireworks.jpg" alt>
+                <img src="taj-mahal_copy.jpg" alt>
+                <img src="ibiza.jpg" alt>
+                <img src="ankor-wat.jpg" alt>
+                <img src="austin-fireworks.jpg" alt>
+              </figure>
+            </div>
+          {{else if Vimeo}}
+            <div class="iframe-div">
+              <img class="gif" src="http://25.media.tumblr.com/776ff7c5696e136f3e18c9f73117b641/tumblr_mwur1vel5K1sgpnrko1_r3_400.gif"></iframe>
+            </div>
+          {{/if}}
+        </div>
+      </div>
+      <div class="bottom-div section">
+        <div class="button-bundle">
+          <div class="dribbble-content icon">
+            <button class="dribbble-button">
+              <div class="dribbble-primed primed"></div>
+              <i class="icon-dribbble"></i>
+            </button>
+          </div>
+          <div class="icon">
+            <button class="behance-button">
+              <div class="behance-primed primed"></div>
+              <i class="icon-behance"></i>
+            </button>
+          </div>
+          <div class="icon">
+            <button class="linkedin-button">
+              <div class="linkedin-primed primed"></div>
+              <i class="icon-linkedin"></i>
+            </button>
+          </div>
+          <div class="icon">
+            <button class="twitter-button">
+              <div class="twitter-primed primed"></div>
+              <i class="icon-twitter"></i>
+            </button>
+          </div>
+          <div class="icon">
+            <button class="instagram-button">
+              <div class="instagram-primed primed"></div>
+              <i class="icon-instagram"></i>
+            </button>
+          </div>
+          <div class="icon">
+            <button class="vimeo-button">
+              <div class="vimeo-primed primed"></div>
+              <i class="icon-vimeo"></i>
+            </button>
+          </div>
+        </div>
+        <h5 class="email-header">Contact me on kere.chris@gmail.com</h5>
+      </div>
+    </div>
+  </script>
+</body>
+</html>
